@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<html>
+       @Html.ActionLink("The Future Home ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+<head>
+           @Html.ActionLink("The Future Home ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    <style>
+        .start {
+            background-image: url("../../images/pexels-magda-ehlers-985287.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-size :cover;
+        }
+        .firstd {
+            width: 800px;
+            background-color: rgb(0,0,0,0.6);
+            margin: auto;
+            color: #FFFFFF;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+            font-family:sans-serif;
+        }
+        .secondd {
+            border: 3px solid;
+            background-color: rgb(0,0,0,0.6);
+            text-align: center;
+            width: 300px;
+            padding: 50px;
+            margin: 20px;
+            position: absolute;
+            right: 100px;
+            font-family: sans-serif;
+        }
+        .firstp{
+            font-family:'Italic Outline Art';
+            font-size:large;
+            color:floralwhite;
+        }
+        .advices {
+            background-color: rgb(0, 0, 0,0.6);
+            width: 600px;
+            height: 400px;
+         
+            font-family: sans-serif;
+            color: #FFFFFF;
+           font-size:20px;
+            padding: 50px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body class="start">
+    <div class="firstd">
+        <h1>Welcome In The Future Sporting Club Website </h1>
+    </div>
+   
+    <div class="secondd">
+        <p class="firstp">
+            Our club help children to keep healthy and fit
+            and make them more fun and confident by trainig
+            them with professional trainers in different sports,
+            we hope to Enjoy with Us
+        </p>
+
+
+    </div>
+    <div class=" advices">
+        <h2>
+            History of the future club 
+        </h2>
+        <p>
+            The Future Sporting Club was founded in 2005 when a group of young people 
+            from Assiut established Al asdeqaa Club, which merged in 
+            2009, specifically on the ninth of March, with Al Butain Club 
+            which was founded in 2004.  It was agreed to name the new club 
+            “The Future”, the two teams were close-by neighbors in the city 
+            of Assiut which helped to speed up the merger.
+            
+        </p>
+    </div>
+</body>
+
+</html>

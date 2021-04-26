@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "error";
+    //Layout = "~/Views/Account/_LayoutPage1.cshtml";
+
+}
+<html>
+<head>
+    <style>
+        body {
+            
+            background-image: url('../../images/pexels-jakub-novacek-924824 (1).jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        .button {
+            background-color: #3BAF9F;
+            display: block;
+            margin: 20px 0px 0px 20px;
+            text-align: center;
+            border-radius: 12px;
+            border: 2px solid #366473;
+            padding: 14px 110px;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            transition: 0.25px;
+            font-size: 30px;
+            margin-left:400px;
+        }
+
+        button:hover {
+            background-color: #5390F5;
+        }
+        .info {
+            width: 800px;
+            background-color: rgb(0,0,0,0.6);
+            margin: auto;
+            color: #FFFFFF;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class=" info">This Email Or Password Dont match with our servers  </h1>
+
+    <div>
+        <input class=" button" type="submit" title="button" value="Register" onclick="location.href='@Url.Action("Create", "trainees")'" />
+    </div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"> </span>
+                    <span class="icon-bar"> </span>
+                    <span class="icon-bar"> </span>
+
+                </button>
+                @Html.ActionLink("The Future Home ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

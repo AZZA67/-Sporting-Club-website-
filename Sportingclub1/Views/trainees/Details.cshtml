@@ -1,0 +1,205 @@
+﻿@model Sportingclub1.Models.trainees
+
+@{
+    ViewBag.Title = "Profile";
+    //Layout = "~/Views/Account/_LayoutPage1.cshtml";
+    
+}
+<html>
+<head>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("../../images/wall-wallpaper-concrete-colored-painted-textured-concept_53876-31799.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        .info {
+            width: 800px;
+            background-color: rgb(0,0,0,0.6);
+            margin: auto;
+            color: #FFFFFF;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .main {
+            background-color: rgb(0,0,0,0.5);
+            width: 400px;
+            height: 700px;
+            margin: auto;
+            padding:5px;
+            text-align: center;
+        }
+
+        .name {
+            width: 100%;
+            height: 100px;
+            /*margin-left: 25px;
+            margin-top: 30px;
+            width: 125px;*/
+            color: white;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .button {
+            background-color: #3BAF9F;
+            display: block;
+            margin: 20px 0px 0px 20px;
+            text-align: center;
+            border-radius: 12px;
+            border: 2px solid #366473;
+            padding: 14px 110px;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            transition: 0.25px;
+            font-size: 30px;
+        }
+
+        button:hover {
+            background-color: #5390F5;
+        }
+
+        .name2 {
+            width: 100%;
+            height: 100px;
+            /*margin-left: 25px;
+            margin-top: 30px;
+            width: 125px;*/
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .firstp {
+            font-size: large;
+            color: floralwhite;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .secondd {
+            border: 3px solid;
+            background-color: rgb(0,0,0,0.6);
+            text-align: center;
+            padding: 50px;
+            font-family: sans-serif;
+            width: 300px;
+            margin-left: 800px;
+            margin-top: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<div class=" info">
+    <h1>
+        Welcome,   @Html.DisplayFor(model => model.name)
+    </h1>
+    
+</div>
+
+<body class=" data">
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"> </span>
+                    <span class="icon-bar"> </span>
+                    <span class="icon-bar"> </span>
+
+                </button>
+                @Html.ActionLink("The Future Home ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+                    <li>@Html.ActionLink("Logout", "Logout", "Account")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class=" main">
+        <dl>
+            <div class=" name">
+                <dt>
+                    @Html.DisplayNameFor(model => model.name)
+                </dt>
+                <div>
+                    <dd class=" name2">
+                        @Html.DisplayFor(model => model.name)
+                    </dd>
+                </div>
+            </div>
+            <div class=" name">
+                <dt>
+                    @Html.DisplayNameFor(model => model.gender)
+                </dt>
+                <div>
+                    <dd class=" name2">
+                        @Html.DisplayFor(model => model.gender)
+                    </dd>
+                </div>
+            </div>
+            <div class=" name">
+                <dt>
+                    @Html.DisplayNameFor(model => model.age)
+                </dt>
+                <div>
+                    <dd class=" name2">
+                        @Html.DisplayFor(model => model.age)
+                    </dd>
+                </div>
+            </div>
+            <div class=" name">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+                <div>
+                    <dd class=" name2">
+                        @Html.DisplayFor(model => model.Email)
+                    </dd>
+                </div>
+            </div>
+            <div class=" name">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Sport_Name)
+                </dt>
+                <div>
+                    <dd class=" name2">
+                        @Html.DisplayFor(model => model.Sport_Name)
+                    </dd>
+                </div>
+            </div>
+            <div class="name">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Training_Date)
+                </dt>
+                <div>
+                    <dd class=" name2">
+                        @Html.DisplayFor(model => model.Training_Date)
+                    </dd>
+                </div>
+            </div>
+        </dl>
+
+        <p class=" button">
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ID })
+        </p>
+
+    </div>
+</body>
+
+</html>
