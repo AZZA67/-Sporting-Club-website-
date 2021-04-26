@@ -10,4 +10,6 @@ USAGE:
 For first time use on local computer they need to 
 add the some sports clubs and respective sports available their and appointments which suits them .
 Details :
-Go to 
+-project made up of asp.net mvc 5 with a sql server 2019 for the back-end connection.
+-you can open this project with visual studio to make easier representation .
+
